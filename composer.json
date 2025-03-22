@@ -1,0 +1,17 @@
+{
+    "name": "richardmwilson191/job_board",
+    "description": "This is a job board api.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Richardmwilson191",
+            "email": "richardmwilson191@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "./app"
+        }
+    }
+}
