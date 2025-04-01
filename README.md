@@ -75,6 +75,8 @@ Contributions are welcome! Please follow these steps:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## To Dos
+- implement middleware logic
+- refactor router to use dependency injection instead of instantiating controller 
 - add validation
 - add authentication
 - refactor controllers
