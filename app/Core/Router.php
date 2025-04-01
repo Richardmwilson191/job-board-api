@@ -35,13 +35,17 @@ class Router
                 $action = $route['action'];
 
                 if (!class_exists($controllerName)) {
-                    die("Controller $controllerName not found.");
+                    http_response_code(500);
+                    echo json_encode("Controller $controllerName not found.");
+                    return;
                 }
 
                 $controller = new $controllerName();
 
                 if (!method_exists($controller, $action)) {
-                    die("Method $action not found in controller $controllerName.");
+                    http_response_code(500);
+                    echo json_encode("Method $action not found in controller $controllerName.");
+                    return;
                 }
 
                 // Pass dynamic parameters to the controller method

@@ -17,3 +17,5 @@ $router->add('POST', 'role', 'RoleController', 'store');
 $router->add('GET', 'role/show/{id}', 'RoleController', 'show');
 $router->add('PATCH', 'role/update/{id}', 'RoleController', 'update');
 $router->add('DELETE', 'role/delete/{id}', 'RoleController', 'delete');
+
+return $router;
